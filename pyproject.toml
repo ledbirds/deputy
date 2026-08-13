@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deputy"
+version = "0.3.0"
+description = "An agent runtime where autonomy is a permission, not a default."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Junaid Ahsan" }]
+keywords = ["agents", "llm", "policy", "evaluation", "calibration"]
+
+# Deliberately dependency-free in the core. See docs/adr/0005-no-agent-framework.md
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov>=4.1"]
+
+[project.scripts]
+deputy = "deputy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

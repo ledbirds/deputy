@@ -1,0 +1,633 @@
+{
+  "suite_version": "1",
+  "cases_file": "evals/cases/triage.json",
+  "quality": {
+    "suite": "triage-rubric",
+    "n": 42,
+    "errors": 0,
+    "mean_score": 0.8929,
+    "pass_rate": 0.7857,
+    "cost_usd": 0.0,
+    "by_tag": {
+      "broad-annoyance": 1.0,
+      "data-loss-thin": 0.5,
+      "not-urgent": 0.9583,
+      "plain-bug-reproducible": 0.5,
+      "plain-bug-thin": 1.0,
+      "regression-broad": 1.0,
+      "regression-with-workaround": 1.0,
+      "release-blocker": 1.0,
+      "security-report": 1.0,
+      "security-vague": 0.5,
+      "silent-data-loss": 1.0,
+      "stale-and-thin": 1.0,
+      "stale-version-report": 1.0,
+      "support-question": 1.0,
+      "support-question-thin": 1.0,
+      "urgent": 0.8056
+    },
+    "results": [
+      {
+        "id": "tri-001",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.9525741268224334,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "silent-data-loss",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-002",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.9525741268224334,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "silent-data-loss",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-003",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.9525741268224334,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "silent-data-loss",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-004",
+        "score": 0.5,
+        "reason": "one band too low (backlog vs soon)",
+        "confidence": 0.401312339887548,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "data-loss-thin",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-005",
+        "score": 0.5,
+        "reason": "one band too low (backlog vs soon)",
+        "confidence": 0.401312339887548,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "data-loss-thin",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-006",
+        "score": 0.5,
+        "reason": "one band too low (backlog vs soon)",
+        "confidence": 0.401312339887548,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "data-loss-thin",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-007",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.8581489350995123,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "security-report",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-008",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.8581489350995123,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "security-report",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-009",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.8581489350995123,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "security-report",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-010",
+        "score": 0.5,
+        "reason": "one band too low (backlog vs soon)",
+        "confidence": 0.3543436937742045,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "security-vague",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-011",
+        "score": 0.5,
+        "reason": "one band too low (backlog vs soon)",
+        "confidence": 0.3543436937742045,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "security-vague",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-012",
+        "score": 0.5,
+        "reason": "one band too low (backlog vs soon)",
+        "confidence": 0.3543436937742045,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "security-vague",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-013",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.9308615796566533,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "release-blocker",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-014",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.9308615796566533,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "release-blocker",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-015",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.9308615796566533,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "release-blocker",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-016",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.5,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "regression-with-workaround",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-017",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.5,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "regression-with-workaround",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-018",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.5,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "regression-with-workaround",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-019",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.8909031788043871,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "regression-broad",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-020",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.8909031788043871,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "regression-broad",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-021",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.8909031788043871,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "regression-broad",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-022",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.017986209962091555,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "support-question",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-023",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.017986209962091555,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "support-question",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-024",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.017986209962091555,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "support-question",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-025",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.012128434984274234,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "support-question-thin",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-026",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.012128434984274234,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "support-question-thin",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-027",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.012128434984274234,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "support-question-thin",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-028",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.19781611144141825,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "stale-version-report",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-029",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.19781611144141825,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "stale-version-report",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-030",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.19781611144141825,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "stale-version-report",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-031",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.021881270936130476,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "stale-and-thin",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-032",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.021881270936130476,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "stale-and-thin",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-033",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.021881270936130476,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "stale-and-thin",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-034",
+        "score": 0.5,
+        "reason": "one band too high (soon vs backlog)",
+        "confidence": 0.4501660026875221,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "plain-bug-reproducible",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-035",
+        "score": 0.5,
+        "reason": "one band too high (soon vs backlog)",
+        "confidence": 0.4501660026875221,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "plain-bug-reproducible",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-036",
+        "score": 0.5,
+        "reason": "one band too high (soon vs backlog)",
+        "confidence": 0.4501660026875221,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "plain-bug-reproducible",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-037",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.06913842034334682,
+        "outcome": true,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "plain-bug-thin",
+          "urgent"
+        ]
+      },
+      {
+        "id": "tri-038",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.06913842034334682,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "plain-bug-thin",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-039",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.06913842034334682,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "plain-bug-thin",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-040",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.42555748318834097,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "broad-annoyance",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-041",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.42555748318834097,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "broad-annoyance",
+          "not-urgent"
+        ]
+      },
+      {
+        "id": "tri-042",
+        "score": 1.0,
+        "reason": "exact band",
+        "confidence": 0.42555748318834097,
+        "outcome": false,
+        "error": null,
+        "cost_usd": 0.0,
+        "tags": [
+          "broad-annoyance",
+          "not-urgent"
+        ]
+      }
+    ]
+  },
+  "calibration": {
+    "n": 42,
+    "brier": 0.18831039471318722,
+    "brier_ci_95": [
+      0.11834487420972543,
+      0.26908770084290845
+    ],
+    "baseline_brier": 0.2448979591836736,
+    "skill": 0.23106588825448593,
+    "ece": 0.10020686938368553,
+    "informative": true,
+    "caveat": "",
+    "bins": [
+      {
+        "range": [
+          0.0,
+          0.2
+        ],
+        "n": 15,
+        "mean_confidence": 0.0638,
+        "observed_rate": 0.0667,
+        "gap": 0.0029
+      },
+      {
+        "range": [
+          0.2,
+          0.4
+        ],
+        "n": 3,
+        "mean_confidence": 0.3543,
+        "observed_rate": 1.0,
+        "gap": 0.6457
+      },
+      {
+        "range": [
+          0.4,
+          0.6
+        ],
+        "n": 12,
+        "mean_confidence": 0.4443,
+        "observed_rate": 0.4167,
+        "gap": 0.0276
+      },
+      {
+        "range": [
+          0.8,
+          1.0
+        ],
+        "n": 12,
+        "mean_confidence": 0.9081,
+        "observed_rate": 0.75,
+        "gap": 0.1581
+      }
+    ]
+  }
+}

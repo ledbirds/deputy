@@ -1,0 +1,52 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install
+        run: pip install -e ".[dev]"
+
+      - name: Tests
+        run: pytest --cov=deputy --cov-report=term-missing
+
+      # The example is part of the contract. A README that shows output the
+      # repo can no longer produce is worse than no README, so the run is
+      # checked in CI rather than trusted.
+      - name: Worked example still runs
+        run: python -m examples.triage.triage
+
+      # Evals run on every commit because a quality regression that only
+      # surfaces when someone remembers to run the suite is a quality
+      # regression that ships.
+      - name: Evals
+        run: |
+          python evals/build_cases.py
+          python evals/run_triage.py
+
+      # Containment is a hard gate: the suite exits non-zero if any attack
+      # reached its goal action. Detection deliberately is not gated, because
+      # the design does not depend on the scanner catching anything.
+      - name: Injection containment
+        run: python evals/run_injection.py
+
+      - name: Committed eval results match a fresh run
+        run: |
+          git diff --exit-code evals/results/ \
+            || (echo "::error::eval results changed; re-run and commit them" && exit 1)

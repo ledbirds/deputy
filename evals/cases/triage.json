@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "tri-001",
+    "inputs": {
+      "signals": {
+        "data_loss": true,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": true,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": false,
+    "tags": [
+      "silent-data-loss",
+      "not-urgent"
+    ],
+    "note": "Rows dropped without error during bulk import"
+  },
+  {
+    "id": "tri-002",
+    "inputs": {
+      "signals": {
+        "data_loss": true,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": true,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": true,
+    "tags": [
+      "silent-data-loss",
+      "urgent"
+    ],
+    "note": "Rows dropped without error during bulk import"
+  },
+  {
+    "id": "tri-003",
+    "inputs": {
+      "signals": {
+        "data_loss": true,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": true,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": null,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": true,
+    "tags": [
+      "silent-data-loss",
+      "urgent"
+    ],
+    "note": "Rows dropped without error during bulk import"
+  },
+  {
+    "id": "tri-004",
+    "inputs": {
+      "signals": {
+        "data_loss": true,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "soon",
+    "outcome": true,
+    "tags": [
+      "data-loss-thin",
+      "urgent"
+    ],
+    "note": "lost my data"
+  },
+  {
+    "id": "tri-005",
+    "inputs": {
+      "signals": {
+        "data_loss": true,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "soon",
+    "outcome": true,
+    "tags": [
+      "data-loss-thin",
+      "urgent"
+    ],
+    "note": "lost my data"
+  },
+  {
+    "id": "tri-006",
+    "inputs": {
+      "signals": {
+        "data_loss": true,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": null,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "soon",
+    "outcome": true,
+    "tags": [
+      "data-loss-thin",
+      "urgent"
+    ],
+    "note": "lost my data"
+  },
+  {
+    "id": "tri-007",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": true,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": true,
+    "tags": [
+      "security-report",
+      "urgent"
+    ],
+    "note": "Session token accepted after logout"
+  },
+  {
+    "id": "tri-008",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": true,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": true,
+    "tags": [
+      "security-report",
+      "urgent"
+    ],
+    "note": "Session token accepted after logout"
+  },
+  {
+    "id": "tri-009",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": true,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": null,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": true,
+    "tags": [
+      "security-report",
+      "urgent"
+    ],
+    "note": "Session token accepted after logout"
+  },
+  {
+    "id": "tri-010",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": true,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "soon",
+    "outcome": true,
+    "tags": [
+      "security-vague",
+      "urgent"
+    ],
+    "note": "possible security problem, contact me privately"
+  },
+  {
+    "id": "tri-011",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": true,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "soon",
+    "outcome": true,
+    "tags": [
+      "security-vague",
+      "urgent"
+    ],
+    "note": "possible security problem, contact me privately"
+  },
+  {
+    "id": "tri-012",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": true,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": null,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "soon",
+    "outcome": true,
+    "tags": [
+      "security-vague",
+      "urgent"
+    ],
+    "note": "possible security problem, contact me privately"
+  },
+  {
+    "id": "tri-013",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": true,
+        "reproducible": true,
+        "blocks_release": true,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": true,
+    "tags": [
+      "release-blocker",
+      "urgent"
+    ],
+    "note": "Build fails on the release branch after upgrade"
+  },
+  {
+    "id": "tri-014",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": true,
+        "reproducible": true,
+        "blocks_release": true,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": true,
+    "tags": [
+      "release-blocker",
+      "urgent"
+    ],
+    "note": "Build fails on the release branch after upgrade"
+  },
+  {
+    "id": "tri-015",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": null,
+        "regression": true,
+        "reproducible": true,
+        "blocks_release": true,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": true,
+    "tags": [
+      "release-blocker",
+      "urgent"
+    ],
+    "note": "Build fails on the release branch after upgrade"
+  },
+  {
+    "id": "tri-016",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": true,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": true,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "soon",
+    "outcome": true,
+    "tags": [
+      "regression-with-workaround",
+      "urgent"
+    ],
+    "note": "Sort order flipped in 4.1, can pin to 4.0"
+  },
+  {
+    "id": "tri-017",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": true,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": true,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "soon",
+    "outcome": false,
+    "tags": [
+      "regression-with-workaround",
+      "not-urgent"
+    ],
+    "note": "Sort order flipped in 4.1, can pin to 4.0"
+  },
+  {
+    "id": "tri-018",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": true,
+        "reproducible": true,
+        "blocks_release": null,
+        "many_affected": false,
+        "has_workaround": true,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "soon",
+    "outcome": false,
+    "tags": [
+      "regression-with-workaround",
+      "not-urgent"
+    ],
+    "note": "Sort order flipped in 4.1, can pin to 4.0"
+  },
+  {
+    "id": "tri-019",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": true,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": true,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": false,
+    "tags": [
+      "regression-broad",
+      "not-urgent"
+    ],
+    "note": "Every scheduled job fires an hour late since DST change"
+  },
+  {
+    "id": "tri-020",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": true,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": true,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": true,
+    "tags": [
+      "regression-broad",
+      "urgent"
+    ],
+    "note": "Every scheduled job fires an hour late since DST change"
+  },
+  {
+    "id": "tri-021",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": true,
+        "reproducible": true,
+        "blocks_release": null,
+        "many_affected": true,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "urgent",
+    "outcome": false,
+    "tags": [
+      "regression-broad",
+      "not-urgent"
+    ],
+    "note": "Every scheduled job fires an hour late since DST change"
+  },
+  {
+    "id": "tri-022",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": true,
+        "question_not_bug": true,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "support-question",
+      "not-urgent"
+    ],
+    "note": "How do I configure a proxy?"
+  },
+  {
+    "id": "tri-023",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": true,
+        "question_not_bug": true,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "support-question",
+      "not-urgent"
+    ],
+    "note": "How do I configure a proxy?"
+  },
+  {
+    "id": "tri-024",
+    "inputs": {
+      "signals": {
+        "data_loss": null,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": true,
+        "question_not_bug": true,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "support-question",
+      "not-urgent"
+    ],
+    "note": "How do I configure a proxy?"
+  },
+  {
+    "id": "tri-025",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": true,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "support-question-thin",
+      "not-urgent"
+    ],
+    "note": "does this work with postgres"
+  },
+  {
+    "id": "tri-026",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": true,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "support-question-thin",
+      "not-urgent"
+    ],
+    "note": "does this work with postgres"
+  },
+  {
+    "id": "tri-027",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": null,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": true,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "support-question-thin",
+      "not-urgent"
+    ],
+    "note": "does this work with postgres"
+  },
+  {
+    "id": "tri-028",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": true,
+        "no_detail": false
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "stale-version-report",
+      "not-urgent"
+    ],
+    "note": "Crash on startup (running 2.9)"
+  },
+  {
+    "id": "tri-029",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": true,
+        "no_detail": false
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "stale-version-report",
+      "not-urgent"
+    ],
+    "note": "Crash on startup (running 2.9)"
+  },
+  {
+    "id": "tri-030",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": null,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": true,
+        "no_detail": false
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "stale-version-report",
+      "not-urgent"
+    ],
+    "note": "Crash on startup (running 2.9)"
+  },
+  {
+    "id": "tri-031",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": true,
+        "no_detail": true
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "stale-and-thin",
+      "not-urgent"
+    ],
+    "note": "broken"
+  },
+  {
+    "id": "tri-032",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": true,
+        "no_detail": true
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "stale-and-thin",
+      "not-urgent"
+    ],
+    "note": "broken"
+  },
+  {
+    "id": "tri-033",
+    "inputs": {
+      "signals": {
+        "data_loss": null,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": true,
+        "no_detail": true
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "stale-and-thin",
+      "not-urgent"
+    ],
+    "note": "broken"
+  },
+  {
+    "id": "tri-034",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "backlog",
+    "outcome": true,
+    "tags": [
+      "plain-bug-reproducible",
+      "urgent"
+    ],
+    "note": "Tooltip renders behind the modal"
+  },
+  {
+    "id": "tri-035",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "backlog",
+    "outcome": false,
+    "tags": [
+      "plain-bug-reproducible",
+      "not-urgent"
+    ],
+    "note": "Tooltip renders behind the modal"
+  },
+  {
+    "id": "tri-036",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": null,
+        "no_detail": false
+      }
+    },
+    "expect": "backlog",
+    "outcome": false,
+    "tags": [
+      "plain-bug-reproducible",
+      "not-urgent"
+    ],
+    "note": "Tooltip renders behind the modal"
+  },
+  {
+    "id": "tri-037",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "low",
+    "outcome": true,
+    "tags": [
+      "plain-bug-thin",
+      "urgent"
+    ],
+    "note": "layout weird on mobile"
+  },
+  {
+    "id": "tri-038",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "plain-bug-thin",
+      "not-urgent"
+    ],
+    "note": "layout weird on mobile"
+  },
+  {
+    "id": "tri-039",
+    "inputs": {
+      "signals": {
+        "data_loss": null,
+        "security": false,
+        "regression": false,
+        "reproducible": false,
+        "blocks_release": false,
+        "many_affected": false,
+        "has_workaround": false,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": true
+      }
+    },
+    "expect": "low",
+    "outcome": false,
+    "tags": [
+      "plain-bug-thin",
+      "not-urgent"
+    ],
+    "note": "layout weird on mobile"
+  },
+  {
+    "id": "tri-040",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": true,
+        "has_workaround": true,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "backlog",
+    "outcome": false,
+    "tags": [
+      "broad-annoyance",
+      "not-urgent"
+    ],
+    "note": "Export button needs a double click the first time"
+  },
+  {
+    "id": "tri-041",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": true,
+        "has_workaround": true,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": false
+      }
+    },
+    "expect": "backlog",
+    "outcome": false,
+    "tags": [
+      "broad-annoyance",
+      "not-urgent"
+    ],
+    "note": "Export button needs a double click the first time"
+  },
+  {
+    "id": "tri-042",
+    "inputs": {
+      "signals": {
+        "data_loss": false,
+        "security": false,
+        "regression": false,
+        "reproducible": true,
+        "blocks_release": false,
+        "many_affected": true,
+        "has_workaround": true,
+        "question_not_bug": false,
+        "stale_version": false,
+        "no_detail": null
+      }
+    },
+    "expect": "backlog",
+    "outcome": false,
+    "tags": [
+      "broad-annoyance",
+      "not-urgent"
+    ],
+    "note": "Export button needs a double click the first time"
+  }
+]
