@@ -102,17 +102,32 @@ def main() -> int:
     for case in quality["results"]:
         case.pop("elapsed_s", None)
 
+    # Rounded to 6 decimals, and the reason is not cosmetic.
+    #
+    # Python 3.12 changed `sum()` to use Neumaier compensated summation for
+    # floats, so a sum of the same values in the same order differs in its
+    # last bits between 3.11 and 3.12. Committing 17 significant digits made
+    # the reproducibility gate fail on 3.12 while passing on 3.10 and 3.11,
+    # reporting a version difference as a regression.
+    #
+    # Six decimals is also the honest precision. A Brier score whose 95%
+    # interval spans 0.118 to 0.269 does not have seventeen meaningful digits,
+    # and a real regression moves it by far more than 1e-15. The gate stays
+    # strict where strictness means something.
+    def r6(x):
+        return None if x is None else round(x, 6)
+
     payload = {
-        "suite_version": "1",
+        "suite_version": "2",
         "cases_file": str(CASES.relative_to(ROOT)),
         "quality": quality,
         "calibration": {
             "n": cal.n,
-            "brier": cal.brier,
-            "brier_ci_95": list(cal.brier_ci) if cal.brier_ci else None,
-            "baseline_brier": cal.baseline_brier,
-            "skill": cal.skill,
-            "ece": cal.ece,
+            "brier": r6(cal.brier),
+            "brier_ci_95": [r6(v) for v in cal.brier_ci] if cal.brier_ci else None,
+            "baseline_brier": r6(cal.baseline_brier),
+            "skill": r6(cal.skill),
+            "ece": r6(cal.ece),
             "informative": cal.informative,
             "caveat": cal.caveat,
             "bins": [

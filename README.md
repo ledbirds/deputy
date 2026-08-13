@@ -361,10 +361,22 @@ docs/postmortems/  4 records: what broke and what changed as a result
 tests/             153 tests, 82% line coverage
 ```
 
-CI runs the suite on 3.10 through 3.12, runs the worked example, runs the
-evals, and fails if a fresh eval run does not reproduce the committed results
-byte for byte. The result artifact carries no timestamps or latency figures
-for exactly that reason.
+CI runs the suite on 3.10 through 3.12, runs the worked example, runs both
+eval suites, gates on injection containment, and fails if a fresh eval run does
+not reproduce the committed results byte for byte.
+
+That gate caught something on its first real run, which is the sort of thing
+worth keeping in a README. It passed on 3.10 and 3.11 and failed on 3.12,
+because Python 3.12 changed `sum()` to use Neumaier compensated summation for
+floats, so the same values summed in the same order differ in their last bits
+between versions. The committed Brier score was carrying seventeen significant
+digits and two of them disagreed.
+
+The fix was not to loosen the gate. It was to stop claiming precision that does
+not exist: the figures are rounded to six decimals, which is still far finer
+than any real regression, and a bootstrap interval spanning 0.118 to 0.269 was
+never entitled to the other eleven digits anyway. The artifact also carries no
+timestamps or latency figures, for the same reason.
 
 ---
 

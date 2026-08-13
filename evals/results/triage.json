@@ -1,5 +1,5 @@
 {
-  "suite_version": "1",
+  "suite_version": "2",
   "cases_file": "evals/cases/triage.json",
   "quality": {
     "suite": "triage-rubric",
@@ -577,14 +577,14 @@
   },
   "calibration": {
     "n": 42,
-    "brier": 0.18831039471318722,
+    "brier": 0.18831,
     "brier_ci_95": [
-      0.11834487420972543,
-      0.26908770084290845
+      0.118345,
+      0.269088
     ],
-    "baseline_brier": 0.2448979591836736,
-    "skill": 0.23106588825448593,
-    "ece": 0.10020686938368553,
+    "baseline_brier": 0.244898,
+    "skill": 0.231066,
+    "ece": 0.100207,
     "informative": true,
     "caveat": "",
     "bins": [
