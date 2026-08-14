@@ -27,6 +27,15 @@ calibration  Rubric scores are treated as predictions and measured against
 
 No dependencies in the core. No API key needed to run any of it.
 
+**This is not a greenfield demo.** It is the extractable third of a system that
+has been running unattended on my own machine, on schedules, for months. I could
+not publish that one, because it reads a personal inbox and calendar, so I
+rebuilt the part with something to say and left the private data behind.
+[`docs/origins.md`](docs/origins.md) is what the original is, what it cost to
+learn, and which of these design decisions were paid for rather than imagined.
+[`docs/artifacts/`](docs/artifacts/) has real files from it with identifying
+detail removed.
+
 ---
 
 ## Run it
@@ -123,7 +132,7 @@ the process was never parked.
 
 ```bash
 deputy approvals pending ./vault      # what is the system waiting on
-deputy approvals grant ./vault post_comment:1041 --by junaid
+deputy approvals grant ./vault post_comment:1041 --by alice
 ```
 
 Grants are single use and expire after 24 hours by default, because an
@@ -356,6 +365,8 @@ src/deputy/
   evals/       harness, scorers, calibration (Brier, ECE, bootstrap CI)
 examples/triage/   a runnable agent, its policy file, its rubric
 evals/             golden sets, runners, committed results
+docs/origins.md    the system this was extracted from, and what it taught
+docs/artifacts/    real files from that system, sanitised
 docs/adr/          7 records: why the load-bearing decisions were made
 docs/postmortems/  4 records: what broke and what changed as a result
 tests/             153 tests, 82% line coverage
@@ -379,6 +390,25 @@ never entitled to the other eleven digits anyway. The artifact also carries no
 timestamps or latency figures, for the same reason.
 
 ---
+
+## Provenance
+
+The postmortems in `docs/postmortems/` are not hypotheticals written to
+illustrate a point. 0001 is a pipeline that reported success nightly for days
+while submitting nothing, because its final stage needed a browser the scheduled
+environment could never have. I diagnosed it wrongly twice before finding it.
+0002, 0003 and 0004 are bugs in this repo, found while building it.
+
+`docs/origins.md` covers the rest: an application packaged for a role that did
+not exist, form automation that filled four required fields with nothing while
+reporting success, and an outage I confidently reported that had never happened
+because I was reading a stale git ref.
+
+`docs/artifacts/` holds the scoring rubric and one scored role from the original,
+sanitised. The rubric's frontmatter reads `calibrated: never. v1 is a prior,
+not a measurement`, and that has been true for the entire life of the file. The
+`evals/` package here is the machinery for closing that gap, which is why its
+honesty about sample size is not a stylistic choice.
 
 ## What this is not
 
